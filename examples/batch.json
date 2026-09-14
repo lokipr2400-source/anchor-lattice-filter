@@ -1,0 +1,12 @@
+[
+  {"text": "Keep model updates small so continuity does not collapse during a scale jump.", "pole": "pro"},
+  {"text": "Keep model updates small so continuity does not collapse during a scale jump.", "pole": "pro"},
+  {"text": "Flood the trainer with every raw preference, including contradictions and spam.", "pole": "con"},
+  {"text": "Score each contribution by diversity, factual density, and coherence before it enters the update.", "pole": "pro"},
+  {"text": "Ignore opposing views and amplify the loudest cluster only.", "pole": "con"},
+  {"text": "Balance opposing clusters so one faction cannot dominate the preference signal.", "pole": "pro"},
+  {"text": "asdf qwer zxcv 1234 noise token salad pineapple subcommittee.", "pole": "none"},
+  {"text": "too short", "pole": "none"},
+  {"text": "Human veto remains in the loop; the filter proposes, it does not force.", "pole": "pro"},
+  {"text": "Strip the human veto and let the optimizer write policy unattended.", "pole": "con"}
+]
