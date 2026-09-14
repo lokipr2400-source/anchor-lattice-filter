@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anchor-lattice-filter"
+version = "1.0.0"
+description = "Frozen spec v1.0.0 entropy-gated + opposition-balanced keep/drop filter."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Marcos A. Ruiz"}]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+minilm = ["sentence-transformers>=2.2"]
+
+[project.scripts]
+anchor-filter = "anchor_lattice.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
