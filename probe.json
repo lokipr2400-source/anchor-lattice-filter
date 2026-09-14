@@ -1,0 +1,24 @@
+{
+  "task": "linear preference probe (sign of w\u00b7(e_chosen - e_rejected))",
+  "not": [
+    "not an 8B or 70B train",
+    "not a hallucination benchmark",
+    "JAR Theory is personal philosophy and is not a variable in this probe",
+    "novels / Distributed Childhood are fiction and are not evidence for the filter"
+  ],
+  "spec_version": "1.0.0",
+  "backend": "hash-3gram-384-seed-20260914",
+  "keep_rule": "both",
+  "ridge_lambda": 1.0,
+  "N_train_unfiltered": 4000,
+  "N_train_filtered": 1996,
+  "N_train_dropped": 2004,
+  "N_test": 2350,
+  "seconds": 14.979,
+  "eval": [
+    {"method": "length_baseline", "correct": 1415, "N_test": 2350, "accuracy": 0.6021276595744681, "wilson95_lo": 0.5821867759371119, "wilson95_hi": 0.6217351872060325},
+    {"method": "probe_unfiltered_train", "correct": 1408, "N_test": 2350, "accuracy": 0.5991489361702128, "wilson95_lo": 0.5791882280753783, "wilson95_hi": 0.6187860111427578},
+    {"method": "probe_filtered_train", "correct": 1362, "N_test": 2350, "accuracy": 0.5795744680851064, "wilson95_lo": 0.5595022714025605, "wilson95_hi": 0.5993869248798062},
+    {"method": "chance", "correct": null, "N_test": 2350, "accuracy": 0.5, "wilson95_lo": null, "wilson95_hi": null}
+  ]
+}
