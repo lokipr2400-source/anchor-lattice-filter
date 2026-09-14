@@ -1,0 +1,24 @@
+"""Frozen constants for Anchor Lattice Filter spec v1.0.0."""
+
+SPEC_VERSION = "1.0.0"
+SPEC_FROZEN_ON = "2026-09-14"
+
+PRIMARY_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBED_DIM = 384
+FALLBACK_HASH_SEED = 20260914
+
+TAU = 0.15
+H_MIN = 0.15
+H_MAX = 0.985
+B_MIN = 0.05
+W_MIN = 0.45
+DUP_COS = 0.92
+MIN_CHARS = 12
+
+ALPHA = 0.35
+BETA = 0.40
+GAMMA = 0.25
+EPS = 1e-12
+
+BACKEND_FALLBACK = "hash-3gram-384-seed-20260914"
+BACKEND_MINILM = PRIMARY_EMBED_MODEL
